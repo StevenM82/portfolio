@@ -1,5 +1,60 @@
-<style>
-  h1{
-    color: blue;
+  h1 {
+    color: hsla(240,100%,100%, .5);
   }
-</style>
+
+  h1 {
+    color: #b7a57a;
+    font-family: papyrus;
+    width: 50%;
+    padding: 5px;
+    text-shadow: 2px 2px 2px tomato;
+  }
+
+  h2 {
+    color: gray;
+  }
+
+  h3 {
+    color: #b7a57a;
+  }
+
+  p {
+    color: rgb(255, 255, 255);
+  }
+
+  a {
+    color: #b7a57a;
+  }
+
+  img {
+    border-style: outset;
+    border-color: black;
+    border-width: 5px;
+    width: 25%;
+  }
+
+  body {
+    background-color: #4b2e83;
+  }
+
+  details {
+    color: white;
+  }
+
+  cite {
+    color: gray;
+  }
+
+  figcaption {
+    color: tomato;
+  }
+
+  address {
+    color: white;
+    border-radius: 20px;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    padding: 7px;
+    width: 140px;
+    height: 75px;
+  }
