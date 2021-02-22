@@ -3,12 +3,21 @@
   margin: 1px;
 }
 
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
 .h1 {
-    color: rgb(183, 165, 122);
+    color: green;
     font-family: papyrus;
-    padding: 5px;
     display: flex;
-    justify-content: left;
+    justify-content: flex-end;
+  }
+
+  .h2 {
+    color: rgb(183, 165, 122);
   }
 
   h3 {
@@ -18,22 +27,22 @@
   .menu {
     list-style: none;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: left;
     padding: 10px;
+    width: 500px;
+  }
+
+  .a {
+    color: rgb(183, 165, 122);
   }
 
   .a:hover {
-    opacity: 12;
+    opacity: 0.5;
   }
 
   p {
     color: rgb(255, 255, 255);
-  }
-
-  a {
-    color: rgb(183, 165, 122);
-    text-decoration: none;
   }
 
   body {
