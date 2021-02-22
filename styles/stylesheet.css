@@ -3,17 +3,13 @@
   margin: 1px;
 }
 
-.top-right {
-  position: absolute;
-  top: 8px;
-  right: 16px;
-}
-
-.h1 {
-    color: green;
+  .h1 {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    color: black;
     font-family: papyrus;
-    display: flex;
-    justify-content: flex-end;
+    font-size: 3rem;
   }
 
   .h2 {
@@ -35,6 +31,7 @@
 
   .a {
     color: rgb(183, 165, 122);
+    padding: 0px 20px;
   }
 
   .a:hover {
