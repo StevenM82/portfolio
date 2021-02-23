@@ -9,16 +9,13 @@
     right: 16px;
     color: red;
     font-family: 'Caveat', cursive;
-    font-size: 3rem;
-  }
-
-  .fas {
-    color: red;
+    font-size: 4rem;
+    text-shadow: -3px 3px 0 black;
   }
 
   h2 {
     color: rgb(183, 165, 122);
-    padding: 20px 0px;
+    padding: 20px 20px;
   }
 
   h3 {
@@ -29,7 +26,8 @@
     list-style: none;
     display: flex;
     align-items: flex-start;
-    padding: 10px;
+    padding: 0px 10px;
+    margin: 0px 1px;
     background-color: lightgray;
   }
 
@@ -44,6 +42,17 @@
 
   .a:hover {
     opacity: 0.5;
+  }
+
+  .section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 65%;
+  }
+
+  .article {
+    padding: 20px;
   }
 
   p {
@@ -65,8 +74,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border-radius: 20px;
     border-bottom: 2px solid;
     border-top: 2px solid;
     padding: 10px;
+  }
+
+  .fas {
+    padding: 0px 10px;
   }
