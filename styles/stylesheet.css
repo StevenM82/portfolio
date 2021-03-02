@@ -31,12 +31,13 @@ h2, h3 {
 .menu > li {
   border: 1px black solid;
   padding: 11px;
-  transition-duration: 2s;
+  transition-duration: 3s;
 }
 
 .menu > li:hover {
   background: rgb(75, 46, 131);
   border-radius: 45%;
+  transform: rotate(360deg);
 }
 
 .a {
@@ -83,6 +84,10 @@ footer {
   border-radius: 20px;
   border-bottom: 2px solid;
   border-top: 2px solid;
+}
+
+.address > p, a {
+  
 }
 
 .fas {
