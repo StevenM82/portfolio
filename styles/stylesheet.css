@@ -62,13 +62,20 @@ h2, h3 {
   margin: 0px;
 }
 
+.main-content {
+  display: flex;
+  flex-flow: row wrap;
+  float: left;
+  width: 65%;
+}
+
 .article-1 {
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
-  float: left;
   padding: 10px;
+  width: 50%;
   border: black solid 1px;
 }
 
@@ -77,7 +84,6 @@ h2, h3 {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  float: left;
   padding: 10px;
   border: black solid 1px;
 }
@@ -87,7 +93,6 @@ h2, h3 {
   flex-flow: column wrap;
   justify-content: center;
   align-items: flex-end;
-  float: left;
   padding: 10px;
   border: black solid 1px;
 }
@@ -106,7 +111,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 35%;
+  width: 25%;
   background-color: rgba(255, 255, 255, 0);
 }
 
@@ -130,6 +135,7 @@ footer {
   align-items: center;
   justify-content: flex-end;
   height: 200px;
+  width: 100%;
 }
 
 .address {
