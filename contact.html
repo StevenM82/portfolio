@@ -19,17 +19,39 @@
 
     <form class="fieldset-container" method="GET">
       <fieldset class="fieldset">
-        <legend>An attempt to move things about</legend>
+        <legend>Centering a fieldset</legend>
         <label class="label">Your name:
           <input type="text" name="applicantName">
         </label>
-        <label class="label">Definitely don't click here!
-          <input type="checkbox" name="checkingOut">
+      </fieldset>
+
+      <fieldset class="fieldset-2">
+        <legend><h2>You win!!</h2></legend>
+        <h3>Practicing with checkbox</h3>
+        <fieldset class="borderless" disabled>
+          <label>You can either click here and win any AND every lottery EVER!!!
+            <input type="checkbox" name="checkOut">
+          </label>
+        </fieldset>
+        <fieldset class="borderless">
+          <label>OR<br>Click here and just never win:
+            <input type="checkbox" name="checkIn">
+          </label>
+        </fieldset>
+      </fieldset>
+
+      <fieldset class="fieldset-3">
+        <legend>Radio, radio. Where forth are thou radio?</legend>
+        <label class="label"> Was it the nightingale or the lark that was heard?
+          <input type="radio" name="nightingale" value="nightingale">
+          The nightingale
         </label>
-        <label>Click here
-          <input
+        <label>
+          <input type="radio" name="lark" value="lark">
+          The lark
         </label>
       </fieldset>
+
     </form>
 
     </div>
