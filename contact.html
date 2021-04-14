@@ -18,10 +18,13 @@
     </header>
 
     <form class="fieldset-container" method="GET">
-      <fieldset class="fieldset">
-        <legend>Centering a fieldset</legend>
-        <label class="label">Your name:
+      <fieldset class="fieldset legend">
+        <legend>Gathering information</legend>
+        <label>Your name:
           <input type="text" name="applicantName">
+        </label>
+        <label>Your email
+          <input type="email" name="applicantEmail"
         </label>
       </fieldset>
 
@@ -34,23 +37,29 @@
           </label>
         </fieldset>
         <fieldset class="borderless">
-          <label>OR<br>Click here and just never win:
+          <label>Click here and never win:
             <input type="checkbox" name="checkIn">
           </label>
         </fieldset>
       </fieldset>
 
       <fieldset class="fieldset-3">
-        <legend>Radio, radio. Where forth are thou radio?</legend>
-        <label class="label"> Was it the nightingale or the lark that was heard?
+        <legend><h2>Radio, radio. Wherefore art thou radio?</h2></legend>
+        <label>Was it the nightingale or the lark that was heard?<br>
           <input type="radio" name="nightingale" value="nightingale">
           The nightingale
         </label>
+        <br>
         <label>
-          <input type="radio" name="lark" value="lark">
+          <input type="radio" name="nightingale" value="lark">
           The lark
         </label>
       </fieldset>
+
+
+        <label class="jobs-label">How many jobs have you had?<br>
+          <input type="number" name="jobCount" min="0">
+        </label>
 
     </form>
 
