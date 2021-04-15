@@ -1,0 +1,36 @@
+* { box-sizing: border-box; }
+
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-area: 2 / 2 / 2 / 10;
+}
+.right-side-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-area: 2 / 10 / 4 / 12;
+}
+.fieldset {
+  grid-area: 1 / 5 / 2 / 10;
+  border-radius: 50px;
+}
+.fieldset-2 { grid-area: 2 / 1 / 3 / 5; }
+.fieldset-3 { grid-area: 3 / 11 / 3 / -8; }
+
+.jobs-label { grid-area: 1 / 11 / 2 / 13; }
+.right-label { grid-area: 1 / 1 / 3 / span 12; }
+.legend {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input {
+  border-radius: 20px;
+}
+.no-border {
+  border: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}

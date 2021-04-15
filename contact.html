@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact info</title>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="styles/web-forms.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Slab&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0b98faa97f.js" crossorigin="anonymous"></script>
@@ -17,28 +18,30 @@
       <h1 class="h1-contact">Web forms for the portfolio</h1>
     </header>
 
-    <form class="fieldset-container" method="GET">
+    <form class="form-container" method="GET">
       <fieldset class="fieldset legend">
         <legend>Gathering information</legend>
         <label>Your name:
           <input type="text" name="applicantName">
         </label>
         <label>Your email
-          <input type="email" name="applicantEmail"
+          <input type="email" name="applicantEmail">
         </label>
       </fieldset>
 
       <fieldset class="fieldset-2">
         <legend><h2>You win!!</h2></legend>
         <h3>Practicing with checkbox</h3>
-        <fieldset class="borderless" disabled>
-          <label>You can either click here and win any AND every lottery EVER!!!
+        <fieldset class="no-border" disabled>
+          <label>
             <input type="checkbox" name="checkOut">
+            You can either click here and win any AND every lottery EVER!!!
           </label>
         </fieldset>
-        <fieldset class="borderless">
-          <label>Click here and never win:
+        <fieldset class="no-border">
+          <label>
             <input type="checkbox" name="checkIn">
+            Or click here and never win...
           </label>
         </fieldset>
       </fieldset>
@@ -46,22 +49,27 @@
       <fieldset class="fieldset-3">
         <legend><h2>Radio, radio. Wherefore art thou radio?</h2></legend>
         <label>Was it the nightingale or the lark that was heard?<br>
-          <input type="radio" name="nightingale" value="nightingale">
+          <input type="radio" name="bird" value="nightingale">
           The nightingale
         </label>
-        <br>
         <label>
-          <input type="radio" name="nightingale" value="lark">
+          <input type="radio" name="bird" value="lark">
           The lark
         </label>
       </fieldset>
 
-
-        <label class="jobs-label">How many jobs have you had?<br>
-          <input type="number" name="jobCount" min="0">
-        </label>
-
+      <label class="jobs-label">How many jobs have you had?<br>
+        <input class="col-3" type="number" name="jobCount" min="0" max="7">
+      </label>
     </form>
+
+    <form class="right-side-container" method="GET">
+      <label class="right-label">Opportunity to speak your mind
+        <textarea name="text" rows="15" cols="40"></textarea>
+      </label>
+      <input type="submit" value="Submit">
+    </form>
+
 
     </div>
   </body>

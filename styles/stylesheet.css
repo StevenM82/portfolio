@@ -49,35 +49,6 @@
   transform: scale(1.5);
 }
 
-/*Fieldset styling*/
-.fieldset-container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-area: 2 / 2 / 2 / 10;
-}
-.fieldset {
-  grid-area: 1 / 4 / 2 / 10;
-  border-radius: 50px;
-}
-.fieldset-2 { grid-area: 2 / 1 / 3 / 5; }
-.fieldset-3 { grid-area: 2 / 10 / 3 / -8; }
-.fieldset-4 { grid-area: 1 / 11 / 2 / 13; }
-
-.jobs-label { grid-area: 1 / 11 / 2 / 13; }
-.legend {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-input { border-radius: 20px; }
-.borderless {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-/*Fieldset end styling*/
-
 .a {
   color: rgb(183, 165, 122);
   padding: 0px;
