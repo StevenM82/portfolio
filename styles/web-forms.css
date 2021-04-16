@@ -7,9 +7,55 @@ input[type=submit] {
 }
 .input { display: block; }
 
-fieldset { margin: 1rem; }
-.fieldset { border-radius: 50px; }
+fieldset {
+  margin: 1rem;
+}
+.fieldset-1 {
+  border-radius: 50px;
+  float: left;
+}
+.fieldset-2 {
+  border-style: dotted;
+  border-left-style: dashed;
+  border-right-style: dashed;
+  border-bottom-color: green;
+  border-left-color: red;
+  border-right-color: violet;
+  border-radius: 25%;
+  border-top: none;
+  float: left;
+}
+.fieldset-3 { float: left; }
+.flex-label {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+.jobs {
+  border: solid black;
+  border-width: 0 0 1px;
+}
 
+.align {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.no-border {
+  border: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.clear-float::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*Remove and customize checkbox and checkmark*/
 .checkbox input {
   position: absolute;
   opacity: 0;
@@ -57,23 +103,4 @@ fieldset { margin: 1rem; }
   width: 5px;
   height: 5px;
   content: "\2717";
-}
-
-.align {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.flex-label {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-}
-
-.no-border {
-  border: none;
-  display: block;
-  margin: 0;
-  padding: 0;
 }

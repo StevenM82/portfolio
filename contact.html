@@ -18,7 +18,7 @@
     </header>
 
     <form method="GET">
-      <fieldset class="fieldset col-4 align">
+      <fieldset class="fieldset-1 align clear-float col-5">
         <legend>Gathering information</legend>
         <label>Your name:
           <input type="text" name="applicantName">
@@ -28,11 +28,25 @@
         </label>
       </fieldset>
 
-      <label class="flex-label col-4">How many jobs have you had?<br>
-        <input class="fieldset col-1" type="number" name="jobCount" min="0" max="7">
-      </label>
+      <fieldset class="fieldset-2 clear-float col-4">
+        <label class="flex-label jobs col-12">How many jobs have you had?<br>
+          <input class="fieldset col-1" type="number" name="jobCount" min="0" max="7">
+        </label>
+      </fieldset>
 
-      <fieldset class="col-3">
+      <fieldset class="fieldset-3 clear-float col-4">
+        <legend><h2>Radio, radio. Wherefore art thou radio?</h2></legend>
+        <label>Was it the nightingale or the lark that was heard?<br>
+          <input type="radio" name="bird" value="nightingale">
+          The nightingale
+        </label>
+        <label>
+          <input type="radio" name="bird" value="lark">
+          The lark
+        </label>
+      </fieldset>
+
+      <fieldset class="col-4">
         <legend><h2>You win!!</h2></legend>
         <h3>Practicing with checkbox</h3>
         <fieldset class="no-border" disabled>
@@ -49,39 +63,27 @@
         </fieldset>
       </fieldset>
 
-      <fieldset class="col-6">
-        <legend><h2>Radio, radio. Wherefore art thou radio?</h2></legend>
-        <label>Was it the nightingale or the lark that was heard?<br>
-          <input type="radio" name="bird" value="nightingale">
-          The nightingale
-        </label>
-        <label>
-          <input type="radio" name="bird" value="lark">
-          The lark
-        </label>
-      </fieldset>
-
       <fieldset class="checkbox col-2">
         <legend><h2>Choose your weapon(s)</h2></legend>
         <label class="container">Broadsword
-          <input type="checkbox" name="sword">
+          <input type="checkbox" name="Broadsword">
           <span class="checkmark"></span>
         </label>
         <label class="container">Scimitar
-          <input type="checkbox" name="sword">
+          <input type="checkbox" name="Scimitar">
           <span class="checkmark"></span>
         </label>
         <label class="container">Rapier
-          <input type="checkbox" name="sword">
+          <input type="checkbox" name="Rapier">
           <span class="checkmark"></span>
         </label>
         <label class="container">Needle
-          <input type="checkbox" name="sword">
+          <input type="checkbox" name="Needle">
           <span class="checkmark"></span>
         </label>
 
-        <label>
-          <textarea name="text" rows="15" cols="35">Why for?</textarea>
+        <label>Why for?
+          <textarea name="text" rows="10" cols="35"></textarea>
         </label><br>
       </fieldset>
 
