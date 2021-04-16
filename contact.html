@@ -12,14 +12,13 @@
   </head>
 
   <body>
-    <div class="grid-container">
 
-    <header class="header-container">
+    <header>
       <h1 class="h1-contact">Web forms for the portfolio</h1>
     </header>
 
-    <form class="form-container" method="GET">
-      <fieldset class="fieldset legend">
+    <form method="GET">
+      <fieldset class="fieldset col-4 align">
         <legend>Gathering information</legend>
         <label>Your name:
           <input type="text" name="applicantName">
@@ -29,24 +28,28 @@
         </label>
       </fieldset>
 
-      <fieldset class="fieldset-2">
+      <label class="flex-label col-4">How many jobs have you had?<br>
+        <input class="fieldset col-1" type="number" name="jobCount" min="0" max="7">
+      </label>
+
+      <fieldset class="col-3">
         <legend><h2>You win!!</h2></legend>
         <h3>Practicing with checkbox</h3>
         <fieldset class="no-border" disabled>
           <label>
-            <input type="checkbox" name="checkOut">
+            <input type="checkbox" name="cannotClick">
             You can either click here and win any AND every lottery EVER!!!
           </label>
         </fieldset>
         <fieldset class="no-border">
           <label>
-            <input type="checkbox" name="checkIn">
+            <input type="checkbox" name="canClick">
             Or click here and never win...
           </label>
         </fieldset>
       </fieldset>
 
-      <fieldset class="fieldset-3">
+      <fieldset class="col-6">
         <legend><h2>Radio, radio. Wherefore art thou radio?</h2></legend>
         <label>Was it the nightingale or the lark that was heard?<br>
           <input type="radio" name="bird" value="nightingale">
@@ -58,19 +61,37 @@
         </label>
       </fieldset>
 
-      <label class="jobs-label">How many jobs have you had?<br>
-        <input class="col-3" type="number" name="jobCount" min="0" max="7">
-      </label>
+      <fieldset class="checkbox col-2">
+        <legend><h2>Choose your weapon(s)</h2></legend>
+        <label class="container">Broadsword
+          <input type="checkbox" name="sword">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Scimitar
+          <input type="checkbox" name="sword">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Rapier
+          <input type="checkbox" name="sword">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Needle
+          <input type="checkbox" name="sword">
+          <span class="checkmark"></span>
+        </label>
+
+        <label>
+          <textarea name="text" rows="15" cols="35">Why for?</textarea>
+        </label><br>
+      </fieldset>
+
+      <label>Select your favorite color:
+        <input type="color" name="favcolor" value="#0000ff">
+      </label><br>
+
+      <input class="col-12" type="submit" value="Submit">
     </form>
 
-    <form class="right-side-container" method="GET">
-      <label class="right-label">Opportunity to speak your mind
-        <textarea name="text" rows="15" cols="40"></textarea>
-      </label>
-      <input type="submit" value="Submit">
-    </form>
 
-
-    </div>
   </body>
 </html>
