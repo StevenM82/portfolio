@@ -7,9 +7,13 @@ input[type=submit] {
 }
 .input { display: block; }
 
-fieldset {
-  margin: 1rem;
+.h1-contact {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
 }
+
+fieldset { margin: 1rem; }
 .fieldset-1 {
   border-radius: 50px;
   float: left;
